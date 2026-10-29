@@ -1,0 +1,120 @@
+/* DU Merch Store - Stylesheet */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --du-maroon: #800020;
+  --du-maroon-dark: #580016;
+  --du-maroon-light: #9e1b32;
+  --du-gold: #eab308;
+  --du-gold-light: #fef08a;
+  --du-navy: #0f172a;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #1e293b;
+  background-color: #f8fafc;
+}
+
+h1, h2, h3, h4, .brand-font {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Glassmorphism nav */
+.glass-header {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* College card hover effects */
+.college-pill {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.college-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+}
+
+/* Product Card animations */
+.product-card {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 30px -10px rgba(15, 23, 42, 0.12);
+}
+
+/* Cart slide-over transitions */
+.cart-drawer-backdrop {
+  transition: opacity 0.3s ease-in-out;
+}
+.cart-drawer-content {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Modal animation */
+.modal-enter {
+  opacity: 0;
+  transform: scale(0.95);
+}
+.modal-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.25s ease-out;
+}
+
+/* Gradient accents */
+.du-gradient-maroon {
+  background: linear-gradient(135deg, #800020 0%, #4a0013 100%);
+}
+
+.du-gradient-gold {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.whatsapp-button {
+  background-color: #25D366;
+  transition: all 0.2s ease;
+}
+.whatsapp-button:hover {
+  background-color: #1ebc57;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+}
+
+/* Badge glow */
+.badge-pulse {
+  box-shadow: 0 0 0 0 rgba(234, 179, 8, 0.7);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(234, 179, 8, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(234, 179, 8, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(234, 179, 8, 0);
+  }
+}
