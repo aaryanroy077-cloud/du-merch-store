@@ -1,79 +1,57 @@
-# 🎓 DU Merch Co. - Delhi University Merchandise & Custom Society Jerseys
+# 🎓 University Merch (Original) - Delhi University Collective
+Official Collegiate Streetwear, 1-of-1 Personalized Apparel, and Custom Society Drops.
 
-A modern, high-converting e-commerce web platform built specifically for **Delhi University students, colleges, and societies**.
-
----
-
-## 🌟 Key Features Built-In
-
-1. **DU Central & Campus Pride Merch**:
-   - Universal DU hoodies, vintage graphic tees, tote bags, and dad caps.
-   - Filter by **North Campus** (SRCC, Hindu, Stephen's, Hansraj, KMC, Miranda) and **South Campus** (LSR, Venky, Gargi, JMC, ARSD).
-2. **College-Specific Hubs**:
-   - Quick college filter pills and dropdown switcher.
-   - Distinct badges, slogans, and aesthetic college colors.
-3. **⚡ Custom Society Jersey & Merch WhatsApp Quote Engine**:
-   - Interactive bulk quote calculator for 350+ DU Societies (DramSoc, WDS, Sports, DebSoc, Fest Teams).
-   - Dynamic quantity slider with bulk discount tiers (10%, 18%, 25%).
-   - Generates a pre-filled, perfectly formatted WhatsApp order message with one click.
-4. **Student-Centric Shopping Cart**:
-   - Slide-over drawer with item size selection, quantity controls, and promo code system (`DU2026`, `FESTVIBES`).
-   - "Order via WhatsApp" button for instant COD/UPI order confirmation without requiring complex passwords or logins.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Faaryanroy077-cloud%2Fdu-merch-store)
 
 ---
 
-## 🚀 How to View & Test Right Now
+## 🌐 Live Website Links
 
-You can open the website instantly in your web browser:
+* 🚀 **GitHub Pages Live URL**: [https://aaryanroy077-cloud.github.io/du-merch-store/](https://aaryanroy077-cloud.github.io/du-merch-store/)
+* ⚡ **Vercel 1-Click Deployment URL**: [Deploy to Vercel (Free Subdomain)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Faaryanroy077-cloud%2Fdu-merch-store)
+* 📁 **GitHub Source Code**: [https://github.com/aaryanroy077-cloud/du-merch-store](https://github.com/aaryanroy077-cloud/du-merch-store)
 
-1. Open your File Explorer and go to:
+---
+
+## 🌟 Key Features
+
+1. **Custom Mockup Studio (1-of-1 Personalized Orders)**:
+   - Live interactive 2D Mockup Studio with Front and Back 3D perspective card flip.
+   - Distinct garment silhouettes:
+     - **🧥 Heavyweight Fleece Hoodie (380 GSM)**: Full long sleeves, ribbed wrist cuffs, 3D hood drape with metal aglets, kangaroo pocket, and ribbed waistband.
+     - **👕 Boxy Heavyweight T-Shirt (240 GSM)**: Classic crewneck rib and boxy street cut.
+     - **🥼 Classic Collegiate Varsity Jacket**: Contrasting long sleeves, striped ribbed cuffs and hem, striped collar, 6 metallic snap buttons, and slant welt pockets.
+   - Sticky mockup preview on desktop so the garment stays in view while customizing.
+   - High-resolution PNG Mockup export for WhatsApp and Instagram sharing.
+   - WhatsApp single piece ordering (dispatched in 4-7 days).
+
+2. **Official DU Colleges Directory (40+ Colleges)**:
+   - Complete directory covering North Campus, South Campus, and Off-Campus colleges.
+   - Authentic vector crests and heraldic seals with traditional college colors and establishment dates.
+   - Clicking any college tile immediately starts the 2D Mockup Studio for that college and smoothly scrolls down.
+
+3. **High-Visibility Bulk Society Orders (20+ pieces)**:
+   - Dedicated flow for College Societies, Sports Teams, and Annual Fests.
+   - Available everywhere: Navbar, Hero section, Directory announcement banner, inside Mockup Studio, and floating screen button.
+   - Interactive quote modal generating pre-formatted WhatsApp quotation messages.
+
+4. **Collegiate Princetown Font & Minimalist Aesthetic**:
+   - High-fashion monochromatic palette inspired by luxury editorial streetwear.
+   - Princetown collegiate athletic typography across headers, player names, and numbers.
+
+---
+
+## 🚀 Setting Up Your Free Vercel Subdomain (`.vercel.app`)
+
+You can have your site live on a fast global CDN with a `.vercel.app` subdomain in under 60 seconds:
+
+1. Open **[vercel.com/new](https://vercel.com/new)** (or click the **Deploy with Vercel** button above).
+2. Sign in with your GitHub account (`aaryanroy077-cloud`).
+3. Click **Import** next to `du-merch-store`.
+4. Choose your project name (e.g. `university-merch` or `du-merch-store`).
+5. Click **Deploy**.
+6. Vercel will instantly generate a live URL like:
    ```
-   C:\Users\theaa\.gemini\antigravity\scratch\du-merch-store
+   https://university-merch.vercel.app
    ```
-2. Double-click **`index.html`** to open it in Chrome, Edge, or Brave!
-3. You can click around, add items to the cart, test college filters, and test the WhatsApp buttons.
-
----
-
-## 📱 How to Set Your Real WhatsApp Phone Number
-
-Open `app.js` and look at line 9:
-```javascript
-whatsappNumber: "919876543210", // <--- Replace with your 10-digit number with '91' prefix!
-```
-Whenever a student clicks "Order via WhatsApp" or "Get Society Quote", the inquiry will land directly into your WhatsApp inbox!
-
----
-
-## 🤝 How You & Divyansh Work Together with Antigravity
-
-Since neither of you need to code, here is how you collaborate using Antigravity:
-
-### Step 1: Put this folder on GitHub
-Tell Antigravity:
-> *"Antigravity, please upload this project to my GitHub account so Divyansh can clone it."*
-
-### Step 2: Divyansh opens it in his Antigravity
-On Divyansh's laptop, he simply opens Antigravity and prompts:
-> *"Antigravity, clone our DU Merch store from GitHub into my workspace."*
-
-### Step 3: Divide tasks so you both build simultaneously
-- **You ask your Antigravity**:
-  - *"Antigravity, add 5 more college hoodies for Venkateswara, Ramjas, and Gargi to data.js."*
-  - *"Antigravity, add a Razorpay UPI payment popup for online orders."*
-- **Divyansh asks his Antigravity**:
-  - *"Antigravity, build an interactive 3D/2D jersey customizer where students can type their jersey name & number to preview it."*
-  - *"Antigravity, create an About Us page telling the story of DU Merch Co."*
-
-### Step 4: Syncing changes
-- When you finish:
-  > *"Antigravity, save and push my changes to GitHub."*
-- When Divyansh starts:
-  > *"Antigravity, pull the latest changes from GitHub."*
-
----
-
-## 🌐 Deploying Live to the Internet (Free)
-You can deploy this site in 60 seconds with **Vercel** or **GitHub Pages**:
-- Drag and drop this folder into [Vercel](https://vercel.com) or [Netlify](https://netlify.com)
-- Your website will immediately have a live link like `https://du-merch.vercel.app` that you can share with DU students on WhatsApp groups and Instagram!
+7. Any future changes you push to GitHub will automatically redeploy on Vercel within seconds!
