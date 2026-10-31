@@ -195,9 +195,9 @@ function setVisualizerApparelType(type) {
   VISUALIZER_STATE.apparelType = type;
   document.querySelectorAll(".apparel-type-btn").forEach(btn => {
     if (btn.dataset.type === type) {
-      btn.className = "apparel-type-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-[#800020] text-white shadow-sm transition-all";
+      btn.className = "apparel-type-btn px-3 py-2 rounded-xl text-xs font-bold bg-white text-black shadow-sm transition-all text-center";
     } else {
-      btn.className = "apparel-type-btn px-3 py-1.5 rounded-xl text-xs font-medium text-slate-700 bg-white border border-slate-200 hover:bg-slate-100 transition-all";
+      btn.className = "apparel-type-btn px-3 py-2 rounded-xl text-xs font-medium text-neutral-400 bg-neutral-800 border border-neutral-700 hover:text-white transition-all text-center";
     }
   });
 
@@ -212,9 +212,9 @@ function setVisualizerPattern(pattern) {
   VISUALIZER_STATE.pattern = pattern;
   document.querySelectorAll(".pattern-btn").forEach(btn => {
     if (btn.dataset.pattern === pattern) {
-      btn.className = "pattern-btn px-3 py-1 text-xs font-bold bg-slate-900 text-white rounded-lg shadow-sm";
+      btn.className = "pattern-btn px-3 py-1.5 text-xs font-bold bg-white text-black rounded-lg shadow-sm";
     } else {
-      btn.className = "pattern-btn px-3 py-1 text-xs font-semibold text-slate-600 bg-slate-100 hover:bg-slate-200 rounded-lg";
+      btn.className = "pattern-btn px-3 py-1.5 text-xs font-semibold text-neutral-400 bg-neutral-800 hover:bg-neutral-700 rounded-lg border border-neutral-700";
     }
   });
   renderJerseyMockup();
