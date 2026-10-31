@@ -77,6 +77,16 @@
 
         <!-- Nav Right Actions -->
         <div class="flex items-center gap-2.5">
+          <!-- 🎽 Live 2D Jersey Studio Nav Pill -->
+          <a 
+            href="#jerseyStudioSection" 
+            class="hidden lg:flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold text-amber-900 bg-amber-400 hover:bg-amber-300 transition-all shadow-xs"
+          >
+            <span>🎽</span>
+            <span>Jersey Studio</span>
+            <span class="bg-amber-950 text-amber-200 text-[9px] px-1.5 py-0.2 rounded font-black">2D Live</span>
+          </a>
+
           <!-- WhatsApp Bulk Society Quote CTA -->
           <button 
             onclick="openSocietyQuoteModal()" 
@@ -144,17 +154,24 @@
           <!-- CTAs -->
           <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-2">
             <a 
-              href="#catalogSection" 
-              class="px-6 py-3.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-xs uppercase tracking-wider shadow-lg hover:shadow-xl transition-all"
+              href="#jerseyStudioSection" 
+              class="px-6 py-3.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-xs uppercase tracking-wider flex items-center gap-2 shadow-lg hover:shadow-xl transition-all"
             >
-              Explore Collection 🛍️
+              <span>🎽 Live 2D Jersey Studio</span>
+            </a>
+
+            <a 
+              href="#catalogSection" 
+              class="px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs uppercase tracking-wider border border-white/20 transition-all"
+            >
+              Explore Store 🛍️
             </a>
             
             <button 
               onclick="openSocietyQuoteModal()" 
               class="px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-black text-xs uppercase tracking-wider flex items-center gap-2 shadow-lg hover:shadow-xl transition-all"
             >
-              <span>💬 Custom Society Jerseys (Bulk Quote)</span>
+              <span>💬 Bulk Quote</span>
             </button>
           </div>
 
@@ -356,6 +373,313 @@
     </div>
 
   </main>
+
+  <!-- ========================================== -->
+  <!-- 🎽 LIVE 2D SOCIETY JERSEY VISUALIZER STUDIO -->
+  <!-- ========================================== -->
+  <section id="jerseyStudioSection" class="bg-slate-950 text-white py-16 border-t border-b border-slate-800 relative overflow-hidden">
+    <!-- Ambient Glow -->
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-[#800020]/30 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-amber-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/10 border border-amber-400/30 text-amber-300 text-xs font-bold uppercase tracking-wider mb-2">
+          <span>✨</span>
+          <span>Live 2D Society Mockup Studio</span>
+        </div>
+        <h2 class="brand-font text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white">
+          Design Your Society Jersey <span class="text-amber-400">In Real Time</span>
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-400 mt-2">
+          Type your society name, customize player names and jersey numbers, flip between front & back, and get an instant bulk quote directly on WhatsApp.
+        </p>
+      </div>
+
+      <!-- Main Studio Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- LEFT COLUMN: The Interactive 2D Visualizer Canvas (5 cols) -->
+        <div class="lg:col-span-5 flex flex-col items-center">
+          
+          <!-- View Indicator Badge & Flip Toggle -->
+          <div class="w-full max-w-md flex items-center justify-between mb-3 px-2">
+            <span id="visViewBadge" class="text-[11px] font-black uppercase tracking-wider text-amber-400 bg-amber-950/60 border border-amber-500/30 px-2.5 py-1 rounded-full">
+              FRONT VIEW (Crest & Society)
+            </span>
+            <button 
+              type="button" 
+              onclick="toggleJerseyFlip()" 
+              id="visFlipBtn" 
+              class="px-3 py-1 text-xs font-bold text-white bg-slate-800 hover:bg-slate-700 border border-slate-600 rounded-full flex items-center gap-1.5 shadow transition-all hover:scale-105"
+            >
+              <span id="visFlipBtnText">Show Back View 🔄</span>
+            </button>
+          </div>
+
+          <!-- Jersey Card (Perspective 3D Flip Container) -->
+          <div class="w-full max-w-md aspect-[5/6] jersey-canvas-container relative rounded-3xl bg-gradient-to-b from-slate-900 to-slate-900/90 border border-slate-800 p-4 shadow-2xl flex items-center justify-center">
+            
+            <div id="jersey3dCard" class="jersey-3d-card w-full h-full relative">
+              <!-- Front Face -->
+              <div class="jersey-face absolute inset-0 flex items-center justify-center" id="jerseySvgFrontContainer">
+                <!-- SVG Front generated dynamically via visualizer.js -->
+              </div>
+              <!-- Back Face -->
+              <div class="jersey-face jersey-face-back absolute inset-0 flex items-center justify-center" id="jerseySvgBackContainer">
+                <!-- SVG Back generated dynamically via visualizer.js -->
+              </div>
+            </div>
+
+            <!-- Hint overlay -->
+            <div class="absolute bottom-3 text-[10px] text-slate-500 font-medium">
+              💡 Click "Show Back View" to inspect player name & number
+            </div>
+          </div>
+
+          <!-- Quick Action Buttons under Canvas -->
+          <div class="w-full max-w-md grid grid-cols-2 gap-3 mt-4">
+            <button 
+              type="button" 
+              onclick="orderVisualizerMockupOnWhatsApp()" 
+              class="w-full whatsapp-button text-white font-extrabold text-xs uppercase tracking-wider py-3 px-3 rounded-xl flex items-center justify-center gap-1.5 shadow-lg"
+            >
+              <span>💬</span>
+              <span>Send To WhatsApp</span>
+            </button>
+
+            <button 
+              type="button" 
+              onclick="downloadMockupImage()" 
+              class="w-full bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-bold text-xs uppercase tracking-wider py-3 px-3 rounded-xl flex items-center justify-center gap-1.5 shadow transition-all"
+            >
+              <span>📸</span>
+              <span>Download PNG</span>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN: Customization Controls (7 cols) -->
+        <div class="lg:col-span-7 bg-slate-900/90 border border-slate-800 rounded-3xl p-6 sm:p-8 space-y-6 shadow-xl">
+          
+          <!-- 1. Apparel Type Selector -->
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+              1. Select Apparel Style
+            </label>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+              <button 
+                type="button" 
+                onclick="setVisualizerApparelType('jersey')" 
+                data-type="jersey" 
+                class="apparel-type-btn px-3 py-2 rounded-xl text-xs font-bold bg-[#800020] text-white shadow-sm transition-all text-center"
+              >
+                🎽 Dri-Fit Jersey
+              </button>
+              <button 
+                type="button" 
+                onclick="setVisualizerApparelType('hoodie')" 
+                data-type="hoodie" 
+                class="apparel-type-btn px-3 py-2 rounded-xl text-xs font-medium text-slate-700 bg-white border border-slate-200 hover:bg-slate-100 transition-all text-center"
+              >
+                🧥 Fleece Hoodie
+              </button>
+              <button 
+                type="button" 
+                onclick="setVisualizerApparelType('tee')" 
+                data-type="tee" 
+                class="apparel-type-btn px-3 py-2 rounded-xl text-xs font-medium text-slate-700 bg-white border border-slate-200 hover:bg-slate-100 transition-all text-center"
+              >
+                👕 Oversized Tee
+              </button>
+              <button 
+                type="button" 
+                onclick="setVisualizerApparelType('varsity')" 
+                data-type="varsity" 
+                class="apparel-type-btn px-3 py-2 rounded-xl text-xs font-medium text-slate-700 bg-white border border-slate-200 hover:bg-slate-100 transition-all text-center"
+              >
+                🎓 Varsity Jacket
+              </button>
+            </div>
+          </div>
+
+          <!-- 2. College & Society Details -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1.5">
+                2. DU College
+              </label>
+              <select 
+                id="visCollegeSelect" 
+                class="w-full text-xs font-semibold p-3 bg-slate-800 border border-slate-700 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-amber-400"
+              >
+                <!-- Populated dynamically via visualizer.js -->
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1.5">
+                3. Society / Team Name (Front)
+              </label>
+              <input 
+                type="text" 
+                id="visSocietyInput" 
+                value="IBTIDA" 
+                placeholder="e.g. IBTIDA / DRAMSOC / WDS" 
+                class="w-full text-xs font-bold uppercase p-3 bg-slate-800 border border-slate-700 rounded-xl text-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-400"
+              />
+            </div>
+          </div>
+
+          <!-- 3. Subtitle / Domain & Back Customization (Player Name + Number) -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1.5">
+                4. Front Subtitle
+              </label>
+              <input 
+                type="text" 
+                id="visSubtitleInput" 
+                value="DRAMATICS SOCIETY" 
+                placeholder="e.g. ANNUAL FEST 2026" 
+                class="w-full text-xs font-semibold uppercase p-3 bg-slate-800 border border-slate-700 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-amber-400"
+              />
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1.5">
+                5. Back Name
+              </label>
+              <input 
+                type="text" 
+                id="visPlayerNameInput" 
+                value="DIVYANSH" 
+                placeholder="e.g. DIVYANSH" 
+                class="w-full text-xs font-bold uppercase p-3 bg-slate-800 border border-slate-700 rounded-xl text-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-400"
+              />
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1.5">
+                6. Jersey Number
+              </label>
+              <input 
+                type="text" 
+                id="visPlayerNumberInput" 
+                value="07" 
+                maxlength="2" 
+                placeholder="07" 
+                class="w-full text-xs font-bold p-3 bg-slate-800 border border-slate-700 rounded-xl text-white text-center focus:outline-none focus:ring-2 focus:ring-amber-400"
+              />
+            </div>
+          </div>
+
+          <!-- 4. Color Palettes (Base & Accent) -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 border-t border-slate-800">
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                7. Base Fabric Color
+              </label>
+              <div id="visBaseSwatches" class="flex flex-wrap gap-2">
+                <!-- Generated dynamically via visualizer.js -->
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                8. Accent Trim / Stripe Color
+              </label>
+              <div id="visAccentSwatches" class="flex flex-wrap gap-2">
+                <!-- Generated dynamically via visualizer.js -->
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Pattern Style -->
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+              9. Sublimation Pattern Style
+            </label>
+            <div class="flex flex-wrap gap-2">
+              <button 
+                type="button" 
+                onclick="setVisualizerPattern('sash')" 
+                data-pattern="sash" 
+                class="pattern-btn px-3 py-1.5 text-xs font-bold bg-slate-900 text-white rounded-lg border border-slate-700 shadow-sm"
+              >
+                Diagonal Sash
+              </button>
+              <button 
+                type="button" 
+                onclick="setVisualizerPattern('stripes')" 
+                data-pattern="stripes" 
+                class="pattern-btn px-3 py-1.5 text-xs font-semibold text-slate-400 bg-slate-800 hover:bg-slate-700 rounded-lg border border-slate-700"
+              >
+                Twin Center Stripes
+              </button>
+              <button 
+                type="button" 
+                onclick="setVisualizerPattern('fade')" 
+                data-pattern="fade" 
+                class="pattern-btn px-3 py-1.5 text-xs font-semibold text-slate-400 bg-slate-800 hover:bg-slate-700 rounded-lg border border-slate-700"
+              >
+                Gradient Fade
+              </button>
+              <button 
+                type="button" 
+                onclick="setVisualizerPattern('clean')" 
+                data-pattern="clean" 
+                class="pattern-btn px-3 py-1.5 text-xs font-semibold text-slate-400 bg-slate-800 hover:bg-slate-700 rounded-lg border border-slate-700"
+              >
+                Minimal Solid
+              </button>
+            </div>
+          </div>
+
+          <!-- 6. Quantity & Bulk Discount Calculation -->
+          <div class="p-4 bg-slate-800/80 rounded-2xl border border-slate-700 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex-1">
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-xs font-bold text-slate-300">Quantity Needed:</span>
+                <span id="visQtyDisplay" class="text-xs font-black text-amber-400">30 Pieces</span>
+              </div>
+              <input 
+                type="range" 
+                min="15" 
+                max="150" 
+                step="5" 
+                value="30" 
+                id="visQtySlider" 
+                class="w-full accent-amber-400 cursor-pointer"
+              />
+              <span class="text-[10px] text-slate-400">🔥 30+ pcs gets 10% off • 50+ gets 18% off • 100+ gets 25% off</span>
+            </div>
+
+            <div class="sm:border-l sm:border-slate-700 sm:pl-5 text-right sm:text-right shrink-0">
+              <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Estimated Bulk Rate</div>
+              <div id="visEstimatedRate" class="text-xl font-black text-emerald-400">₹399/pc</div>
+            </div>
+          </div>
+
+          <!-- Final Submit Action -->
+          <button 
+            type="button" 
+            onclick="orderVisualizerMockupOnWhatsApp()" 
+            class="w-full whatsapp-button text-white font-black text-xs uppercase tracking-wider py-4 px-6 rounded-2xl flex items-center justify-center gap-2 shadow-xl hover:scale-[1.01] transition-all"
+          >
+            <span>💬</span>
+            <span>Request Free Digital Mockup & Quotation on WhatsApp</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
 
   <!-- ========================================== -->
   <!-- ⚡ CUSTOM SOCIETY JERSEY STUDIO SHOWCASE   -->
@@ -768,5 +1092,6 @@
   <!-- Scripts -->
   <script src="data.js"></script>
   <script src="app.js"></script>
+  <script src="visualizer.js"></script>
 </body>
 </html>

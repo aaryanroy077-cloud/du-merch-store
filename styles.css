@@ -1,6 +1,6 @@
 /* DU Merch Store - Stylesheet */
 
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Teko:wght@600;700&display=swap');
 
 :root {
   --du-maroon: #800020;
@@ -118,3 +118,52 @@ h1, h2, h3, h4, .brand-font {
     box-shadow: 0 0 0 0 rgba(234, 179, 8, 0);
   }
 }
+
+/* ========================================== */
+/* 🎽 LIVE JERSEY VISUALIZER 2D STUDIO STYLES */
+/* ========================================== */
+.jersey-font-athletic {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.jersey-font-number {
+  font-family: 'Teko', sans-serif;
+  font-weight: 700;
+  line-height: 0.9;
+}
+
+.jersey-canvas-container {
+  perspective: 1200px;
+}
+
+.jersey-3d-card {
+  transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.jersey-3d-card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.jersey-face {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.jersey-face-back {
+  transform: rotateY(180deg);
+}
+
+.swatch-btn {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.swatch-btn:hover {
+  transform: scale(1.12);
+}
+.swatch-btn.active {
+  ring-width: 3px;
+  transform: scale(1.15);
+  box-shadow: 0 0 0 3px #ffffff, 0 0 0 5px #800020;
+}
+
