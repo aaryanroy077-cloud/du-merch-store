@@ -687,7 +687,7 @@ function downloadMockupImage() {
     ctx.fillStyle = "#f59e0b";
     ctx.font = "bold 28px 'Outfit', sans-serif";
     ctx.textAlign = "center";
-    ctx.fillText("DU MERCH CO. • CUSTOM SOCIETY JERSEY STUDIO", 500, 60);
+    ctx.fillText("UNIVERSITY MERCH (ORIGINAL) • SOCIETY JERSEY STUDIO", 500, 60);
 
     ctx.fillStyle = "#94a3b8";
     ctx.font = "20px 'Plus Jakarta Sans', sans-serif";

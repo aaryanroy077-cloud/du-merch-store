@@ -6,7 +6,7 @@
 // Replace with your 10-digit WhatsApp phone number with 91 country code
 // ==========================================
 const STORE_CONFIG = {
-  brandName: "DU Merch Co.",
+  brandName: "University Merch",
   whatsappNumber: "919876543210", // <--- UPDATE THIS TO YOUR REAL NUMBER!
   instagramHandle: "@du.merch.official",
   deliveryCampuses: "North Campus, South Campus, and Pan-India Delivery",
