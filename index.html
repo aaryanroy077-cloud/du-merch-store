@@ -1,75 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>University Merch (Original) | Delhi University & College Society Apparel</title>
+  <title>University Merch (Original) | Delhi University Personalized Apparel & Custom Mockup Studio</title>
   <link rel="icon" type="image/png" href="logo.png">
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   
-  <!-- Minimalist Custom Styles (Zara / H&M Aesthetic) -->
+  <!-- Google Fonts: Graduate (Collegiate / Princetown), Outfit, Plus Jakarta Sans, Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="min-h-screen flex flex-col bg-white text-neutral-900 antialiased selection:bg-black selection:text-white">
 
   <!-- ========================================== -->
-  <!-- 📢 MINIMAL TOP BAR                         -->
+  <!-- 📢 TOP ANNOUNCEMENT BAR                    -->
   <!-- ========================================== -->
-  <div class="bg-black text-white text-[11px] py-2 px-4 text-center font-medium tracking-editorial uppercase flex items-center justify-center gap-2">
-    <span>UNIVERSITY MERCH (ORIGINAL)</span>
-    <span class="text-neutral-500">•</span>
-    <span>EXPRESS DELIVERY TO ALL DU HOSTELS & CAMPUSES</span>
-    <span class="text-neutral-500">•</span>
-    <span class="text-amber-400 font-bold">CODE: DU2026 FOR ₹100 OFF</span>
+  <div class="bg-black text-white text-[11px] py-2 px-4 text-center font-bold tracking-editorial uppercase flex items-center justify-center gap-2">
+    <span class="text-amber-400">UNIVERSITY MERCH (ORIGINAL)</span>
+    <span class="text-neutral-600">•</span>
+    <span>1-OF-1 PERSONALIZED ORDERS & BULK SOCIETY DROPS</span>
+    <span class="text-neutral-600 hidden sm:inline">•</span>
+    <span class="text-neutral-400 hidden sm:inline">EXPRESS CAMPUS & HOSTEL DELIVERY</span>
   </div>
 
   <!-- ========================================== -->
-  <!-- 🧭 MINIMAL STICKY NAVIGATION               -->
+  <!-- 🧭 STICKY NAVIGATION BAR                   -->
   <!-- ========================================== -->
   <header class="sticky top-0 z-40 minimal-nav">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20 gap-6">
+      <div class="flex items-center justify-between h-20 gap-4 sm:gap-6">
         
-        <!-- Brand Logo (High-Res Official Vector Logo) -->
+        <!-- Brand Logo & Official Name in Princetown Font -->
         <a href="#" class="flex items-center gap-3 shrink-0 group">
-          <div class="h-11 w-11 rounded-xl bg-white border border-neutral-200 shadow-2xs flex items-center justify-center p-1 overflow-hidden group-hover:scale-105 transition-transform">
+          <div class="h-12 w-12 rounded-xl bg-white border border-neutral-200 shadow-sm flex items-center justify-center p-1 overflow-hidden group-hover:scale-105 transition-transform">
             <img src="logo.png" alt="University Merch Original Logo" class="h-full w-full object-contain" />
           </div>
           <div>
-            <div class="brand-font text-lg font-black tracking-tight text-black leading-none flex items-center gap-1.5">
+            <div class="font-princetown text-base sm:text-lg font-black tracking-wider text-black leading-none flex items-center gap-1.5">
               <span>UNIVERSITY MERCH</span>
-              <span class="text-[9px] px-1.5 py-0.5 bg-black text-white rounded font-bold uppercase tracking-widest">ORIGINAL</span>
+              <span class="text-[9px] px-1.5 py-0.5 bg-black text-white rounded font-bold uppercase tracking-widest font-sans">ORIGINAL</span>
             </div>
-            <div class="text-[10px] text-neutral-400 tracking-editorial uppercase mt-0.5">
+            <div class="text-[10px] text-neutral-400 tracking-editorial uppercase mt-0.5 font-sans font-semibold">
               Delhi University Collective
             </div>
           </div>
         </a>
 
-        <!-- Center Minimal Navigation Links -->
-        <nav class="hidden md:flex items-center gap-8 text-xs font-semibold uppercase tracking-wider text-neutral-600">
-          <a href="#collegesSection" class="hover:text-black transition-colors flex items-center gap-1">
+        <!-- Center Navigation Links -->
+        <nav class="hidden md:flex items-center gap-6 text-xs font-bold uppercase tracking-wider text-neutral-700">
+          <a href="#collegesSection" class="hover:text-black transition-colors flex items-center gap-1.5 py-1">
             <span>Colleges</span>
-            <span class="text-[9px] bg-neutral-100 text-neutral-800 px-1.5 py-0.2 rounded-full font-bold">40+</span>
+            <span class="text-[9px] bg-neutral-100 text-neutral-900 border border-neutral-300 px-1.5 py-0.5 rounded-full font-black">40+</span>
           </a>
-          <a href="#catalogSection" class="hover:text-black transition-colors">Catalog</a>
-          <a href="#jerseyStudioSection" class="hover:text-black transition-colors flex items-center gap-1.5">
-            <span>Jersey Studio</span>
-            <span class="text-[9px] bg-black text-white px-1.5 py-0.2 rounded font-bold">2D Live</span>
+          <a href="#mockupStudioSection" class="hover:text-black transition-colors flex items-center gap-1.5 py-1">
+            <span>Mockup Studio</span>
+            <span class="text-[9px] bg-black text-white px-1.5 py-0.5 rounded font-black">2D Live</span>
           </a>
-          <a href="javascript:void(0)" onclick="openSocietyQuoteModal()" class="hover:text-black transition-colors">Bulk Society Orders</a>
         </nav>
 
-        <!-- Right Search & Shopping Bag -->
-        <div class="flex items-center gap-3">
-          <!-- Search Bar (Desktop) -->
-          <div class="relative hidden sm:block w-48 lg:w-64">
+        <!-- Right Quick Actions: Search & Bulk Society Button -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          <!-- Quick College Search -->
+          <div class="relative hidden sm:block w-36 lg:w-56">
             <input 
               type="text" 
               id="globalSearchInput" 
-              placeholder="Search hoodie, college, tee..." 
+              placeholder="Search DU College..." 
               class="w-full bg-neutral-100 text-xs pl-8 pr-3 py-2 rounded-full border border-transparent focus:outline-none focus:bg-white focus:border-black transition-all placeholder:text-neutral-400 font-medium"
             />
             <span class="absolute inset-y-0 left-0 pl-2.5 flex items-center text-neutral-400 text-xs">
@@ -77,10 +80,21 @@
             </span>
           </div>
 
+          <!-- Highlighted Bulk Society Orders Button -->
+          <button 
+            type="button" 
+            onclick="openSocietyQuoteModal()" 
+            class="px-4 py-2 sm:px-5 sm:py-2.5 rounded-full btn-society-highlight text-xs font-black uppercase tracking-wider flex items-center gap-1.5 shrink-0"
+            title="Bulk Orders for Societies, Sports Teams & Fests"
+          >
+            <span>⚡ Bulk Society Orders (20+)</span>
+          </button>
+
           <!-- Shopping Bag Button -->
           <button 
+            type="button" 
             onclick="openCartDrawer()" 
-            class="relative flex items-center gap-2 px-3.5 py-2 rounded-full bg-black text-white hover:bg-neutral-800 transition-all text-xs font-bold"
+            class="relative flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-black text-white hover:bg-neutral-800 transition-all text-xs font-bold shrink-0"
             title="View Shopping Bag"
           >
             <span>BAG</span>
@@ -92,12 +106,12 @@
 
       </div>
 
-      <!-- Mobile Search Field -->
+      <!-- Mobile Search Bar -->
       <div class="pb-3 sm:hidden">
         <input 
           type="text" 
-          placeholder="Search SRCC, Hindu, hoodies, jerseys..." 
-          oninput="document.getElementById('globalSearchInput').value = this.value; appState.searchQuery = this.value; renderProducts();"
+          placeholder="Search SRCC, Hindu, Miranda, LSR..." 
+          oninput="document.getElementById('globalSearchInput').value = this.value; appState.collegeSearchQuery = this.value.toLowerCase().trim(); renderCollegeDirectory();"
           class="w-full bg-neutral-100 text-xs px-3.5 py-2 rounded-full border border-transparent focus:outline-none focus:bg-white focus:border-black"
         />
       </div>
@@ -105,48 +119,72 @@
   </header>
 
   <!-- ========================================== -->
-  <!-- ⚡ EDITORIAL HERO SECTION                  -->
+  <!-- ⚡ HERO SECTION (OFFICIAL LOGO & PRINCETOWN FONT) -->
   <!-- ========================================== -->
-  <section class="bg-neutral-50 border-b border-neutral-200 py-16 sm:py-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <section class="bg-neutral-50 border-b border-neutral-200 py-16 sm:py-20 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="max-w-3xl mx-auto text-center space-y-6">
         
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-neutral-300 bg-white text-[11px] font-bold uppercase tracking-editorial text-neutral-600">
-          <span>ORIGINAL DU HERITAGE</span>
-          <span>•</span>
-          <span>EST. DELHI</span>
+        <!-- Official Brand Logo Featured Front & Center -->
+        <div class="flex justify-center">
+          <div class="relative group">
+            <div class="w-32 h-32 sm:w-40 sm:h-40 rounded-3xl bg-white border-2 border-neutral-200 p-3 shadow-xl flex items-center justify-center overflow-hidden group-hover:scale-105 transition-all duration-300">
+              <img src="logo.png" alt="University Merch Original Official Logo" class="w-full h-full object-contain" />
+            </div>
+            <div class="absolute -bottom-2.5 left-1/2 -translate-x-1/2 px-3 py-0.5 bg-black text-white text-[9px] font-black uppercase tracking-widest rounded-full shadow border border-neutral-700 whitespace-nowrap">
+              ORIGINAL BRAND
+            </div>
+          </div>
         </div>
 
-        <h1 class="brand-font text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-black leading-none uppercase">
-          University Merch.
-        </h1>
+        <!-- Headline in Princetown / Collegiate Athletic Font -->
+        <div>
+          <h1 class="font-princetown text-4xl sm:text-6xl lg:text-7xl font-black tracking-wider text-black leading-none uppercase">
+            University Merch
+          </h1>
+          <p class="font-princetown text-xs sm:text-sm tracking-widest text-neutral-500 uppercase mt-2">
+            — ORIGINAL DELHI UNIVERSITY COLLECTIVE —
+          </p>
+        </div>
 
-        <p class="text-neutral-500 text-sm sm:text-base max-w-xl mx-auto font-normal leading-relaxed">
-          The definitive collegiate apparel and custom society jerseys for all <strong>90+ Delhi University colleges</strong>. Designed with pure heavyweight fabrics and minimal aesthetics.
+        <p class="text-neutral-600 text-xs sm:text-sm sm:leading-relaxed max-w-xl mx-auto font-medium">
+          The definitive collegiate streetwear and custom apparel for <strong>Delhi University</strong>. Design your 1-of-1 personalized piece in the Mockup Studio, or get bulk quotes for college societies and sports teams.
         </p>
 
-        <!-- Minimalist CTAs -->
+        <!-- Main Call-to-Action Buttons -->
         <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
+          <!-- CTA 1: Mockup Studio -->
           <a 
-            href="#collegesSection" 
-            class="px-7 py-3.5 rounded-full btn-minimal-black text-xs font-bold uppercase tracking-editorial"
+            href="#mockupStudioSection" 
+            class="px-7 py-3.5 rounded-full btn-minimal-black text-xs font-bold uppercase tracking-editorial shadow-md flex items-center gap-2"
           >
-            Explore All DU Colleges ↓
-          </a>
-          
-          <a 
-            href="#jerseyStudioSection" 
-            class="px-7 py-3.5 rounded-full btn-minimal-outline text-xs font-bold uppercase tracking-editorial"
-          >
-            Live 2D Jersey Studio
+            <span>🎨 1-of-1 Mockup Studio ↓</span>
           </a>
 
+          <!-- CTA 2: Bulk Society Order (Highly Visible) -->
           <button 
+            type="button" 
             onclick="openSocietyQuoteModal()" 
-            class="px-7 py-3.5 rounded-full bg-neutral-200 hover:bg-neutral-300 text-black text-xs font-bold uppercase tracking-editorial transition-all"
+            class="px-7 py-3.5 rounded-full btn-society-highlight text-xs font-black uppercase tracking-wider flex items-center gap-2 shadow-lg"
           >
-            Bulk WhatsApp Quote 💬
+            <span>⚡ Bulk Society Orders (20+ pcs) 💬</span>
           </button>
+          
+          <!-- CTA 3: Explore Colleges -->
+          <a 
+            href="#collegesSection" 
+            class="px-7 py-3.5 rounded-full btn-minimal-outline text-xs font-bold uppercase tracking-editorial"
+          >
+            <span>🎓 All DU Colleges (40+) ↓</span>
+          </a>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="pt-4 flex flex-wrap items-center justify-center gap-6 text-[11px] font-bold uppercase tracking-wider text-neutral-400">
+          <span class="flex items-center gap-1.5"><span class="text-black">✓</span> 1-of-1 Single Custom Orders</span>
+          <span class="flex items-center gap-1.5"><span class="text-black">✓</span> Authentic College Crests</span>
+          <span class="flex items-center gap-1.5"><span class="text-amber-500 font-black">⚡</span> Wholesale Society Pricing</span>
+          <span class="flex items-center gap-1.5"><span class="text-black">✓</span> All DU Campuses</span>
         </div>
 
       </div>
@@ -162,176 +200,158 @@
       <!-- Section Header -->
       <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
         <div>
-          <div class="text-[11px] font-bold uppercase tracking-editorial text-neutral-400">
-            Delhi University Directory
+          <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-neutral-100 text-neutral-600 text-[10px] font-bold uppercase tracking-widest mb-1.5">
+            <span>OFFICIAL DU CRESTS & DIRECTORY</span>
           </div>
-          <h2 class="brand-font text-2xl sm:text-3xl font-black text-black tracking-tight uppercase mt-1">
-            Choose Your College
+          <h2 class="font-princetown text-2xl sm:text-3xl font-black text-black tracking-wider uppercase">
+            Select Your College
           </h2>
           <p class="text-xs text-neutral-500 mt-1">
-            Click any college logo to view tailored hoodies, tees, and fest drops.
+            Click any college logo or name to launch its authentic crest & heraldic colors inside the <strong>2D Mockup Studio</strong>!
           </p>
         </div>
 
-        <!-- Campus Filter Tabs & Search -->
-        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
-          <!-- Search in directory -->
-          <div class="relative">
-            <input 
-              type="text" 
-              id="collegeDirectorySearch" 
-              placeholder="Filter colleges (e.g. SRCC, LSR, Gargi)..." 
-              class="w-full sm:w-64 text-xs bg-neutral-100 pl-8 pr-4 py-2 rounded-full border border-neutral-200 focus:outline-none focus:bg-white focus:border-black font-medium"
-            />
-            <span class="absolute inset-y-0 left-0 pl-2.5 flex items-center text-neutral-400 text-xs">
-              🔍
-            </span>
-          </div>
-
-          <!-- Campus filter pills -->
-          <div class="flex items-center gap-1.5 p-1 bg-neutral-100 rounded-full border border-neutral-200 overflow-x-auto no-scrollbar">
-            <button 
-              type="button" 
-              onclick="filterCollegeDirectoryByCampus('all')" 
-              data-campus="all" 
-              class="campus-tab-btn px-4 py-1.5 text-xs font-bold bg-black text-white rounded-full transition-all whitespace-nowrap"
-            >
-              All Colleges
-            </button>
-            <button 
-              type="button" 
-              onclick="filterCollegeDirectoryByCampus('North Campus')" 
-              data-campus="North Campus" 
-              class="campus-tab-btn px-4 py-1.5 text-xs font-medium text-neutral-600 hover:text-black rounded-full transition-all whitespace-nowrap"
-            >
-              North Campus
-            </button>
-            <button 
-              type="button" 
-              onclick="filterCollegeDirectoryByCampus('South Campus')" 
-              data-campus="South Campus" 
-              class="campus-tab-btn px-4 py-1.5 text-xs font-medium text-neutral-600 hover:text-black rounded-full transition-all whitespace-nowrap"
-            >
-              South Campus
-            </button>
-            <button 
-              type="button" 
-              onclick="filterCollegeDirectoryByCampus('Off-Campus')" 
-              data-campus="Off-Campus" 
-              class="campus-tab-btn px-4 py-1.5 text-xs font-medium text-neutral-600 hover:text-black rounded-full transition-all whitespace-nowrap"
-            >
-              Off-Campus
-            </button>
-          </div>
+        <!-- Campus Filter Tabs -->
+        <div class="flex flex-wrap items-center gap-1.5 p-1 bg-neutral-100 rounded-full border border-neutral-200 self-start md:self-end">
+          <button 
+            type="button" 
+            onclick="filterCollegeDirectoryByCampus('all')" 
+            data-campus="all" 
+            class="campus-tab-btn px-4 py-2 text-xs font-bold bg-black text-white rounded-full transition-all"
+          >
+            All (40+)
+          </button>
+          <button 
+            type="button" 
+            onclick="filterCollegeDirectoryByCampus('North Campus')" 
+            data-campus="North Campus" 
+            class="campus-tab-btn px-4 py-2 text-xs font-medium text-neutral-600 hover:text-black bg-neutral-100 hover:bg-neutral-200 rounded-full transition-all"
+          >
+            North Campus
+          </button>
+          <button 
+            type="button" 
+            onclick="filterCollegeDirectoryByCampus('South Campus')" 
+            data-campus="South Campus" 
+            class="campus-tab-btn px-4 py-2 text-xs font-medium text-neutral-600 hover:text-black bg-neutral-100 hover:bg-neutral-200 rounded-full transition-all"
+          >
+            South Campus
+          </button>
+          <button 
+            type="button" 
+            onclick="filterCollegeDirectoryByCampus('Off-Campus')" 
+            data-campus="Off-Campus" 
+            class="campus-tab-btn px-4 py-2 text-xs font-medium text-neutral-600 hover:text-black bg-neutral-100 hover:bg-neutral-200 rounded-full transition-all"
+          >
+            Off-Campus
+          </button>
         </div>
       </div>
 
-      <!-- Live Count Status -->
-      <div class="flex items-center justify-between text-xs text-neutral-400 mb-4 pb-2 border-b border-neutral-100">
-        <span id="collegesCountBadge">Loading colleges...</span>
-        <span class="text-[11px]">Instant filter on click</span>
+      <!-- Bulk Society Order Notice Banner -->
+      <div class="mb-8 p-4 sm:p-5 bg-neutral-900 text-white rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4 border border-neutral-800 shadow-lg">
+        <div class="flex items-center gap-3.5">
+          <div class="w-10 h-10 rounded-xl bg-amber-400 text-black flex items-center justify-center font-black text-lg shrink-0">
+            ⚡
+          </div>
+          <div>
+            <div class="text-xs font-black uppercase tracking-wider text-amber-400">
+              Ordering for your College Society, Sports Team or Fest?
+            </div>
+            <div class="text-xs text-neutral-300 mt-0.5">
+              Society drops (20 to 500+ pieces) get wholesale factory pricing, custom sponsor placements, and fabric samples.
+            </div>
+          </div>
+        </div>
+        <button 
+          type="button" 
+          onclick="openSocietyQuoteModal()" 
+          class="shrink-0 px-5 py-2.5 rounded-full btn-society-highlight text-xs font-black uppercase tracking-wider shadow-md hover:scale-105 transition-all"
+        >
+          Get Bulk Society Quote →
+        </button>
       </div>
 
-      <!-- The Responsive Clickable Colleges Grid -->
-      <div id="collegeIconsGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-3 sm:gap-4">
-        <!-- Rendered dynamically via app.js -->
+      <!-- College Search Input Bar -->
+      <div class="mb-6 max-w-md">
+        <div class="relative">
+          <input 
+            type="text" 
+            id="collegeDirectorySearch" 
+            placeholder="Search by college name, acronym, or campus..." 
+            class="w-full bg-neutral-50 text-xs pl-9 pr-4 py-2.5 rounded-xl border border-neutral-200 focus:outline-none focus:bg-white focus:border-black transition-all placeholder:text-neutral-400 font-medium"
+          />
+          <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-neutral-400 text-xs">
+            🔍
+          </span>
+        </div>
+        <div class="flex justify-between items-center text-[10px] text-neutral-400 uppercase tracking-widest mt-1.5 px-1 font-semibold">
+          <span id="collegesCountBadge">Loading colleges...</span>
+          <span>Tip: Click any icon to design its apparel</span>
+        </div>
+      </div>
+
+      <!-- Clickable College Icon Grid -->
+      <div id="collegeIconsGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4">
+        <!-- Injected dynamically via app.js -->
       </div>
 
     </div>
   </section>
 
   <!-- ========================================== -->
-  <!-- 🛍️ CATALOG SECTION                         -->
+  <!-- 🎽 CUSTOM MOCKUP STUDIO (STICKY PREVIEW + 1-OF-1 ORDERS) -->
   <!-- ========================================== -->
-  <main id="catalogSection" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
-    
-    <!-- Catalog Header & Category Pills -->
-    <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10 pb-6 border-b border-neutral-200">
-      <div>
-        <div class="text-[11px] font-bold uppercase tracking-editorial text-neutral-400">
-          Curated Releases
-        </div>
-        <h2 class="brand-font text-2xl sm:text-3xl font-black text-black tracking-tight uppercase mt-1">
-          Apparel & Fest Drops
-        </h2>
-        <div class="text-xs text-neutral-500 mt-1" id="productsCount">
-          Showing all products
-        </div>
-      </div>
+  <section id="mockupStudioSection" class="bg-neutral-950 text-white py-20 border-t border-neutral-900 relative overflow-visible">
+    <!-- Anchor for legacy links -->
+    <div id="jerseyStudioSection"></div>
 
-      <!-- Category Filter Pills -->
-      <div class="flex flex-wrap items-center gap-1.5 p-1 bg-neutral-100 rounded-full border border-neutral-200">
-        <button 
-          onclick="setTab('all')" 
-          data-tab="all" 
-          class="tab-btn px-4 py-2 text-xs font-bold bg-black text-white rounded-full transition-all"
-        >
-          All Items
-        </button>
-        <button 
-          onclick="setTab('north')" 
-          data-tab="north" 
-          class="tab-btn px-4 py-2 text-xs font-medium text-neutral-600 hover:text-black rounded-full transition-all"
-        >
-          North Campus
-        </button>
-        <button 
-          onclick="setTab('south')" 
-          data-tab="south" 
-          class="tab-btn px-4 py-2 text-xs font-medium text-neutral-600 hover:text-black rounded-full transition-all"
-        >
-          South Campus
-        </button>
-        <button 
-          onclick="setTab('common')" 
-          data-tab="common" 
-          class="tab-btn px-4 py-2 text-xs font-medium text-neutral-600 hover:text-black rounded-full transition-all"
-        >
-          DU Central
-        </button>
-        <button 
-          onclick="setTab('society')" 
-          data-tab="society" 
-          class="tab-btn px-4 py-2 text-xs font-medium text-neutral-600 hover:text-black rounded-full transition-all"
-        >
-          Society Jerseys ⚡
-        </button>
-      </div>
-    </div>
-
-    <!-- Product Grid -->
-    <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-      <!-- Injected dynamically via app.js -->
-    </div>
-
-  </main>
-
-  <!-- ========================================== -->
-  <!-- 🎽 LIVE 2D SOCIETY JERSEY VISUALIZER STUDIO -->
-  <!-- ========================================== -->
-  <section id="jerseyStudioSection" class="bg-neutral-950 text-white py-20 border-t border-neutral-900 relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
       
       <!-- Section Header -->
-      <div class="text-center max-w-2xl mx-auto mb-14">
+      <div class="text-center max-w-2xl mx-auto mb-10">
         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-neutral-800 bg-neutral-900 text-neutral-400 text-[10px] font-bold uppercase tracking-editorial mb-3">
           <span>2D REAL-TIME STUDIO</span>
           <span>•</span>
-          <span>SOCIETIES & CLUBS</span>
+          <span class="text-amber-400 font-black">1-OF-1 PERSONALIZED ORDERS</span>
         </div>
-        <h2 class="brand-font text-3xl sm:text-5xl font-black tracking-tight text-white uppercase leading-tight">
-          Custom Society Mockup Studio
+        <h2 class="font-princetown text-3xl sm:text-5xl font-black tracking-wider text-white uppercase leading-tight">
+          Custom Mockup Studio
         </h2>
-        <p class="text-xs sm:text-sm text-neutral-400 mt-2">
-          Type your society name, customize player names and jersey numbers, flip between front & back, and get an instant bulk quote directly on WhatsApp.
+        <p class="text-xs sm:text-sm text-neutral-400 mt-2 font-medium">
+          Personalize your own heavyweight hoodie, boxy tee, or collegiate varsity jacket with your DU college crest, society name, and your name & number on the back.
         </p>
       </div>
 
-      <!-- Main Studio Grid -->
+      <!-- Prominent Bulk Society Callout inside Studio -->
+      <div class="max-w-4xl mx-auto mb-10 bg-gradient-to-r from-amber-500/10 via-amber-500/20 to-amber-500/10 border-2 border-amber-400/40 rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-3.5">
+          <div class="w-10 h-10 rounded-xl bg-amber-400 text-black flex items-center justify-center font-black text-xl shrink-0">
+            ⚡
+          </div>
+          <div>
+            <div class="text-xs font-black uppercase tracking-wider text-amber-400">
+              Need Bulk Merchandise for your Society, Club, or Fest? (20+ pcs)
+            </div>
+            <div class="text-xs text-neutral-300 mt-0.5">
+              This studio is for <strong>single personalized orders</strong>. Society bulk orders are handled through our Bulk Society Desk for wholesale pricing and sponsor placement.
+            </div>
+          </div>
+        </div>
+        <button 
+          type="button" 
+          onclick="openSocietyQuoteModal()" 
+          class="shrink-0 px-5 py-2.5 rounded-xl btn-society-highlight text-xs font-black uppercase tracking-wider shadow-md hover:scale-105 transition-all"
+        >
+          💬 Request Bulk Society Quote →
+        </button>
+      </div>
+
+      <!-- Main Studio Grid (Left Column is STICKY on Desktop) -->
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         
-        <!-- LEFT COLUMN: The Interactive 2D Visualizer Canvas (5 cols) -->
-        <div class="lg:col-span-5 flex flex-col items-center">
+        <!-- LEFT COLUMN: The Interactive 2D Visualizer Canvas (STICKY) -->
+        <div class="lg:col-span-5 sticky-studio-preview lg:sticky lg:top-24 self-start flex flex-col items-center z-20">
           
           <!-- View Indicator Badge & Flip Toggle -->
           <div class="w-full max-w-md flex items-center justify-between mb-3 px-2">
@@ -348,7 +368,7 @@
             </button>
           </div>
 
-          <!-- Jersey Card (Perspective 3D Flip Container) -->
+          <!-- Apparel Card (Perspective 3D Flip Container) -->
           <div class="w-full max-w-md aspect-[5/6] jersey-canvas-container relative rounded-3xl bg-neutral-900 border border-neutral-800 p-4 shadow-2xl flex items-center justify-center">
             
             <div id="jersey3dCard" class="jersey-3d-card w-full h-full relative">
@@ -364,7 +384,7 @@
 
             <!-- Hint overlay -->
             <div class="absolute bottom-3 text-[10px] text-neutral-500 font-medium">
-              💡 Click "Show Back View" to inspect player name & number
+              💡 Click "Show Back View" to see player name & number
             </div>
           </div>
 
@@ -372,7 +392,7 @@
           <div class="w-full max-w-md grid grid-cols-2 gap-3 mt-4">
             <button 
               type="button" 
-              onclick="orderVisualizerMockupOnWhatsApp()" 
+              onclick="orderSingleMockupPiece()" 
               class="w-full whatsapp-minimal font-extrabold text-xs uppercase tracking-wider py-3.5 px-3 rounded-full flex items-center justify-center gap-1.5 shadow"
             >
               <span>💬 Order on WhatsApp</span>
@@ -389,55 +409,97 @@
 
         </div>
 
-        <!-- RIGHT COLUMN: Customization Controls (7 cols) -->
+        <!-- RIGHT COLUMN: Customization Controls (Scrollable) -->
         <div class="lg:col-span-7 bg-neutral-900 border border-neutral-800 rounded-3xl p-6 sm:p-8 space-y-6">
           
-          <!-- 1. Apparel Type Selector -->
+          <!-- 1. Apparel Type Selector (Hoodie, T-Shirt, Varsity) -->
           <div>
-            <label class="block text-xs font-bold uppercase tracking-wider text-neutral-400 mb-2">
-              1. Select Apparel Style
-            </label>
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
-              <button 
-                type="button" 
-                onclick="setVisualizerApparelType('jersey')" 
-                data-type="jersey" 
-                class="apparel-type-btn px-3 py-2 rounded-xl text-xs font-bold bg-white text-black shadow-sm transition-all text-center"
-              >
-                Dri-Fit Jersey
-              </button>
+            <div class="flex items-center justify-between mb-2">
+              <label class="block text-xs font-bold uppercase tracking-wider text-neutral-400">
+                1. Select Apparel Style
+              </label>
+              <span class="text-[10px] text-amber-400 font-bold uppercase tracking-wider">
+                Heavyweight Fabrics
+              </span>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+              <!-- Heavyweight Hoodie -->
               <button 
                 type="button" 
                 onclick="setVisualizerApparelType('hoodie')" 
                 data-type="hoodie" 
-                class="apparel-type-btn px-3 py-2 rounded-xl text-xs font-medium text-neutral-400 bg-neutral-800 border border-neutral-700 hover:text-white transition-all text-center"
+                class="apparel-type-btn px-4 py-3 rounded-xl text-xs font-black bg-white text-black shadow-md border-2 border-white transition-all text-center flex flex-col items-center gap-1"
               >
-                Fleece Hoodie
+                <span class="text-base">🧥</span>
+                <span>Fleece Hoodie</span>
+                <span class="text-[10px] opacity-75 font-normal">380 GSM Heavyweight</span>
               </button>
+
+              <!-- Boxy T-Shirt -->
               <button 
                 type="button" 
                 onclick="setVisualizerApparelType('tee')" 
                 data-type="tee" 
-                class="apparel-type-btn px-3 py-2 rounded-xl text-xs font-medium text-neutral-400 bg-neutral-800 border border-neutral-700 hover:text-white transition-all text-center"
+                class="apparel-type-btn px-4 py-3 rounded-xl text-xs font-semibold text-neutral-400 bg-neutral-900 border border-neutral-800 hover:text-white transition-all text-center flex flex-col items-center gap-1"
               >
-                Oversized Tee
+                <span class="text-base">👕</span>
+                <span>Boxy T-Shirt</span>
+                <span class="text-[10px] opacity-75 font-normal">240 GSM Pure Cotton</span>
               </button>
+
+              <!-- Varsity Jacket -->
               <button 
                 type="button" 
                 onclick="setVisualizerApparelType('varsity')" 
                 data-type="varsity" 
-                class="apparel-type-btn px-3 py-2 rounded-xl text-xs font-medium text-neutral-400 bg-neutral-800 border border-neutral-700 hover:text-white transition-all text-center"
+                class="apparel-type-btn px-4 py-3 rounded-xl text-xs font-semibold text-neutral-400 bg-neutral-900 border border-neutral-800 hover:text-white transition-all text-center flex flex-col items-center gap-1"
               >
-                Varsity Bomber
+                <span class="text-base">🥼</span>
+                <span>Varsity Jacket</span>
+                <span class="text-[10px] opacity-75 font-normal">Contrast Sleeves & Snaps</span>
               </button>
             </div>
           </div>
 
-          <!-- 2. College & Society Details -->
+          <!-- Pricing & Single Order Details -->
+          <div class="p-4 bg-neutral-800/80 rounded-2xl border border-neutral-700 flex items-center justify-between">
+            <div>
+              <div class="text-[10px] font-bold text-neutral-400 uppercase tracking-wider">
+                Single Piece Personalized Price
+              </div>
+              <div id="visApparelTitle" class="text-xs font-bold text-white mt-0.5">
+                Heavyweight Fleece Hoodie (380 GSM)
+              </div>
+              <div class="text-[10px] text-neutral-400 mt-0.5">
+                Dispatched in 4-7 business days across DU campuses & Pan-India
+              </div>
+            </div>
+            <div class="text-right">
+              <span id="visOriginalPrice" class="text-xs text-neutral-500 line-through">₹1,899</span>
+              <div id="visSinglePrice" class="text-2xl font-black text-amber-400">₹1,299</div>
+            </div>
+          </div>
+
+          <!-- 2. Select Size -->
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-neutral-400 mb-2">
+              2. Select Size
+            </label>
+            <div class="flex gap-2">
+              <button type="button" onclick="setVisualizerSize('S', this)" class="size-btn w-10 h-10 rounded-lg text-xs font-bold bg-neutral-900 text-neutral-400 border border-neutral-800 hover:border-neutral-600 transition-all">S</button>
+              <button type="button" onclick="setVisualizerSize('M', this)" class="size-btn w-10 h-10 rounded-lg text-xs font-bold bg-neutral-900 text-neutral-400 border border-neutral-800 hover:border-neutral-600 transition-all">M</button>
+              <button type="button" onclick="setVisualizerSize('L', this)" class="size-btn w-10 h-10 rounded-lg text-xs font-black bg-white text-black border border-white shadow-sm transition-all">L</button>
+              <button type="button" onclick="setVisualizerSize('XL', this)" class="size-btn w-10 h-10 rounded-lg text-xs font-bold bg-neutral-900 text-neutral-400 border border-neutral-800 hover:border-neutral-600 transition-all">XL</button>
+              <button type="button" onclick="setVisualizerSize('XXL', this)" class="size-btn w-10 h-10 rounded-lg text-xs font-bold bg-neutral-900 text-neutral-400 border border-neutral-800 hover:border-neutral-600 transition-all">XXL</button>
+            </div>
+          </div>
+
+          <!-- 3. DU College & Society Name -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label class="block text-xs font-bold uppercase tracking-wider text-neutral-400 mb-1.5">
-                2. DU College
+                3. DU College
               </label>
               <select 
                 id="visCollegeSelect" 
@@ -449,49 +511,49 @@
 
             <div>
               <label class="block text-xs font-bold uppercase tracking-wider text-neutral-400 mb-1.5">
-                3. Society / Team Name (Front)
+                4. Chest Text / Society (Front)
               </label>
               <input 
                 type="text" 
                 id="visSocietyInput" 
-                value="IBTIDA" 
-                placeholder="e.g. IBTIDA / DRAMSOC / WDS" 
-                class="w-full text-xs font-bold uppercase p-3 bg-neutral-800 border border-neutral-700 rounded-xl text-white focus:outline-none focus:ring-1 focus:ring-white"
+                value="COMMERCE SOC" 
+                placeholder="e.g. COMMERCE SOC / DRAMATICS / BATCH 2026" 
+                class="w-full text-xs font-bold uppercase p-3 bg-neutral-800 border border-neutral-700 rounded-xl text-white focus:outline-none focus:ring-1 focus:ring-white font-princetown"
               />
             </div>
           </div>
 
-          <!-- 3. Subtitle / Domain & Back Customization -->
+          <!-- 4. Subtitle & Back Personalization (Name & Number) -->
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <div>
               <label class="block text-xs font-bold uppercase tracking-wider text-neutral-400 mb-1.5">
-                4. Front Subtitle
+                5. Front Subtitle
               </label>
               <input 
                 type="text" 
                 id="visSubtitleInput" 
-                value="DRAMATICS SOCIETY" 
-                placeholder="e.g. ANNUAL FEST 2026" 
+                value="NORTH CAMPUS" 
+                placeholder="e.g. NORTH CAMPUS" 
                 class="w-full text-xs font-semibold uppercase p-3 bg-neutral-800 border border-neutral-700 rounded-xl text-white focus:outline-none focus:ring-1 focus:ring-white"
               />
             </div>
 
             <div>
               <label class="block text-xs font-bold uppercase tracking-wider text-neutral-400 mb-1.5">
-                5. Back Name
+                6. Name on Back
               </label>
               <input 
                 type="text" 
                 id="visPlayerNameInput" 
-                value="DIVYANSH" 
-                placeholder="e.g. DIVYANSH" 
-                class="w-full text-xs font-bold uppercase p-3 bg-neutral-800 border border-neutral-700 rounded-xl text-white focus:outline-none focus:ring-1 focus:ring-white"
+                value="AARYAN" 
+                placeholder="e.g. YOUR NAME" 
+                class="w-full text-xs font-bold uppercase p-3 bg-neutral-800 border border-neutral-700 rounded-xl text-white focus:outline-none focus:ring-1 focus:ring-white font-princetown"
               />
             </div>
 
             <div>
               <label class="block text-xs font-bold uppercase tracking-wider text-neutral-400 mb-1.5">
-                6. Jersey Number
+                7. Back Number
               </label>
               <input 
                 type="text" 
@@ -499,16 +561,16 @@
                 value="07" 
                 maxlength="2" 
                 placeholder="07" 
-                class="w-full text-xs font-bold p-3 bg-neutral-800 border border-neutral-700 rounded-xl text-white text-center focus:outline-none focus:ring-1 focus:ring-white"
+                class="w-full text-xs font-bold p-3 bg-neutral-800 border border-neutral-700 rounded-xl text-white text-center focus:outline-none focus:ring-1 focus:ring-white font-princetown text-base"
               />
             </div>
           </div>
 
-          <!-- 4. Color Palettes (Base & Accent) -->
+          <!-- 5. Color Palettes (Base & Accent) -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 border-t border-neutral-800">
             <div>
               <label class="block text-xs font-bold uppercase tracking-wider text-neutral-400 mb-2">
-                7. Base Fabric Color
+                8. Fabric Base Color
               </label>
               <div id="visBaseSwatches" class="flex flex-wrap gap-2">
                 <!-- Generated dynamically via visualizer.js -->
@@ -517,7 +579,7 @@
 
             <div>
               <label class="block text-xs font-bold uppercase tracking-wider text-neutral-400 mb-2">
-                8. Accent Trim / Stripe Color
+                9. Accent / Stripe Color
               </label>
               <div id="visAccentSwatches" class="flex flex-wrap gap-2">
                 <!-- Generated dynamically via visualizer.js -->
@@ -525,17 +587,25 @@
             </div>
           </div>
 
-          <!-- 5. Pattern Style -->
+          <!-- 6. Pattern Style -->
           <div>
             <label class="block text-xs font-bold uppercase tracking-wider text-neutral-400 mb-2">
-              9. Pattern Style
+              10. Graphic Pattern Style
             </label>
             <div class="flex flex-wrap gap-2">
               <button 
                 type="button" 
+                onclick="setVisualizerPattern('clean')" 
+                data-pattern="clean" 
+                class="pattern-btn px-3 py-1.5 text-xs font-bold bg-white text-black rounded-lg shadow-sm"
+              >
+                Solid Minimal
+              </button>
+              <button 
+                type="button" 
                 onclick="setVisualizerPattern('sash')" 
                 data-pattern="sash" 
-                class="pattern-btn px-3 py-1.5 text-xs font-bold bg-white text-black rounded-lg shadow-sm"
+                class="pattern-btn px-3 py-1.5 text-xs font-semibold text-neutral-400 bg-neutral-900 hover:bg-neutral-800 rounded-lg border border-neutral-800"
               >
                 Diagonal Sash
               </button>
@@ -543,7 +613,7 @@
                 type="button" 
                 onclick="setVisualizerPattern('stripes')" 
                 data-pattern="stripes" 
-                class="pattern-btn px-3 py-1.5 text-xs font-semibold text-neutral-400 bg-neutral-800 hover:bg-neutral-700 rounded-lg border border-neutral-700"
+                class="pattern-btn px-3 py-1.5 text-xs font-semibold text-neutral-400 bg-neutral-900 hover:bg-neutral-800 rounded-lg border border-neutral-800"
               >
                 Center Stripes
               </button>
@@ -551,54 +621,32 @@
                 type="button" 
                 onclick="setVisualizerPattern('fade')" 
                 data-pattern="fade" 
-                class="pattern-btn px-3 py-1.5 text-xs font-semibold text-neutral-400 bg-neutral-800 hover:bg-neutral-700 rounded-lg border border-neutral-700"
+                class="pattern-btn px-3 py-1.5 text-xs font-semibold text-neutral-400 bg-neutral-900 hover:bg-neutral-800 rounded-lg border border-neutral-800"
               >
-                Gradient
-              </button>
-              <button 
-                type="button" 
-                onclick="setVisualizerPattern('clean')" 
-                data-pattern="clean" 
-                class="pattern-btn px-3 py-1.5 text-xs font-semibold text-neutral-400 bg-neutral-800 hover:bg-neutral-700 rounded-lg border border-neutral-700"
-              >
-                Solid Minimal
+                Gradient Sublimation
               </button>
             </div>
           </div>
 
-          <!-- 6. Quantity Slider -->
-          <div class="p-4 bg-neutral-800/80 rounded-2xl border border-neutral-700 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div class="flex-1">
-              <div class="flex items-center justify-between mb-1">
-                <span class="text-xs font-bold text-neutral-300">Quantity Needed:</span>
-                <span id="visQtyDisplay" class="text-xs font-black text-white">30 Pieces</span>
-              </div>
-              <input 
-                type="range" 
-                min="15" 
-                max="150" 
-                step="5" 
-                value="30" 
-                id="visQtySlider" 
-                class="w-full accent-white cursor-pointer"
-              />
-              <span class="text-[10px] text-neutral-400">Tiers: 30+ pcs (10% off) • 50+ pcs (18% off) • 100+ pcs (25% off)</span>
-            </div>
+          <!-- Order Actions -->
+          <div class="pt-4 space-y-3">
+            <button 
+              type="button" 
+              onclick="orderSingleMockupPiece()" 
+              class="w-full py-4 px-6 rounded-full bg-white text-black font-extrabold text-xs uppercase tracking-editorial flex items-center justify-center gap-2 hover:bg-neutral-200 transition-all shadow-xl"
+            >
+              <span>Order Single Custom Piece on WhatsApp (1 pc) 💬</span>
+            </button>
 
-            <div class="sm:border-l sm:border-neutral-700 sm:pl-5 text-right shrink-0">
-              <div class="text-[10px] font-bold text-neutral-400 uppercase tracking-wider">Estimated Rate</div>
-              <div id="visEstimatedRate" class="text-xl font-black text-white">₹399/pc</div>
-            </div>
+            <!-- Bulk Society Order Button inside Studio -->
+            <button 
+              type="button" 
+              onclick="openSocietyQuoteModal()" 
+              class="w-full py-3.5 px-6 rounded-full btn-society-highlight text-xs font-black uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-md"
+            >
+              <span>⚡ Need 20+ Pieces? Get Bulk Society Quotation</span>
+            </button>
           </div>
-
-          <!-- Final Submit Action -->
-          <button 
-            type="button" 
-            onclick="orderVisualizerMockupOnWhatsApp()" 
-            class="w-full py-4 px-6 rounded-full bg-white text-black font-extrabold text-xs uppercase tracking-editorial flex items-center justify-center gap-2 hover:bg-neutral-200 transition-all"
-          >
-            <span>Order Mockup On WhatsApp 💬</span>
-          </button>
 
         </div>
 
@@ -608,13 +656,13 @@
   </section>
 
   <!-- ========================================== -->
-  <!-- ⭐ VERIFIED STUDENT ORDERS                 -->
+  <!-- ⭐ VERIFIED STUDENT ORDERS & CAMPUS PROOF  -->
   <!-- ========================================== -->
   <section class="py-16 bg-neutral-50 border-t border-neutral-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-xl mx-auto mb-10">
         <span class="text-[11px] font-bold uppercase tracking-editorial text-neutral-400">Campus Proof</span>
-        <h2 class="brand-font text-2xl sm:text-3xl font-black text-black uppercase mt-1">
+        <h2 class="font-princetown text-2xl sm:text-3xl font-black text-black uppercase mt-1">
           Trusted Across North & South Campus
         </h2>
       </div>
@@ -637,7 +685,7 @@
         <!-- Cart Header -->
         <div class="p-6 border-b border-neutral-100 flex items-center justify-between">
           <div class="flex items-center gap-2">
-            <h3 class="text-sm font-extrabold uppercase tracking-editorial text-black">Shopping Bag</h3>
+            <h3 class="text-sm font-extrabold uppercase tracking-editorial text-black font-princetown">Shopping Bag</h3>
             <span class="cart-count-badge inline-flex items-center justify-center px-2 py-0.5 text-xs font-black text-white bg-black rounded-full">0</span>
           </div>
           <button onclick="closeCartDrawer()" class="p-2 text-neutral-400 hover:text-black rounded-lg text-lg">
@@ -649,9 +697,9 @@
         <div class="flex-1 overflow-y-auto p-6">
           <div id="emptyCartState" class="py-20 text-center">
             <p class="text-xs uppercase tracking-widest text-neutral-400">Your bag is currently empty</p>
-            <button onclick="closeCartDrawer()" class="mt-4 px-6 py-2 rounded-full btn-minimal-black text-xs font-bold">
-              Shop Collections
-            </button>
+            <a href="#mockupStudioSection" onclick="closeCartDrawer()" class="mt-4 inline-block px-6 py-2 rounded-full btn-minimal-black text-xs font-bold">
+              Design Custom Piece
+            </a>
           </div>
 
           <div id="cartItemsList" class="space-y-1">
@@ -711,24 +759,24 @@
   </div>
 
   <!-- ========================================== -->
-  <!-- ⚡ SOCIETY CUSTOM JERSEY QUOTE MODAL       -->
+  <!-- ⚡ SOCIETY BULK JERSEY QUOTE MODAL (HIGH VISIBILITY) -->
   <!-- ========================================== -->
   <div id="societyQuoteModal" class="fixed inset-0 z-50 hidden">
-    <div class="fixed inset-0 bg-black/60 backdrop-blur-xs" onclick="closeSocietyQuoteModal()"></div>
+    <div class="fixed inset-0 bg-black/70 backdrop-blur-xs" onclick="closeSocietyQuoteModal()"></div>
 
     <div class="fixed inset-0 flex items-center justify-center p-4">
-      <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative max-h-[92vh] overflow-y-auto">
         
         <div class="flex items-center justify-between pb-3 border-b border-neutral-100">
           <div>
-            <span class="text-[10px] font-bold uppercase tracking-widest text-neutral-400">
-              Bulk Society Order
+            <span class="text-[10px] font-black uppercase tracking-widest text-amber-600 bg-amber-50 px-2.5 py-0.5 rounded-full border border-amber-200">
+              ⚡ Society Bulk Order Desk (20+ pcs)
             </span>
-            <h3 class="text-base font-black uppercase text-black mt-0.5">
+            <h3 class="font-princetown text-xl font-black uppercase text-black mt-1">
               Request Society Quotation
             </h3>
           </div>
-          <button onclick="closeSocietyQuoteModal()" class="text-neutral-400 hover:text-black text-xl p-1">
+          <button onclick="closeSocietyQuoteModal()" class="text-neutral-400 hover:text-black text-2xl p-1 font-bold">
             ✕
           </button>
         </div>
@@ -744,99 +792,132 @@
             </select>
           </div>
 
-          <!-- Society Name & Domain -->
+          <!-- Society Name & Subtitle -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div>
               <label class="block text-xs font-bold text-neutral-700 uppercase tracking-wider mb-1">
-                2. Society Name *
+                2. Society / Club Name *
               </label>
               <input 
                 type="text" 
                 id="quoteSocietyName" 
-                placeholder="e.g. Abhirang Dramatics" 
-                class="w-full text-xs font-semibold p-2.5 bg-neutral-50 border border-neutral-200 rounded-xl focus:outline-none focus:border-black" 
-                required 
+                placeholder="e.g. Ibtida Dramatics" 
+                class="w-full text-xs font-medium p-2.5 bg-neutral-50 border border-neutral-200 rounded-xl focus:outline-none focus:border-black"
+                required
               />
             </div>
             <div>
               <label class="block text-xs font-bold text-neutral-700 uppercase tracking-wider mb-1">
-                3. Society Domain *
+                Society Domain / Tag
               </label>
-              <select id="quoteSocietyType" class="w-full text-xs font-semibold p-2.5 bg-neutral-50 border border-neutral-200 rounded-xl focus:outline-none focus:border-black" required>
-                <!-- Filled via app.js -->
-              </select>
+              <input 
+                type="text" 
+                id="quoteSocietyDomain" 
+                placeholder="e.g. Western Dance / DebSoc" 
+                class="w-full text-xs font-medium p-2.5 bg-neutral-50 border border-neutral-200 rounded-xl focus:outline-none focus:border-black"
+              />
             </div>
           </div>
 
-          <!-- Apparel Type & Quantity -->
+          <!-- Apparel Type & Fabric -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div>
               <label class="block text-xs font-bold text-neutral-700 uppercase tracking-wider mb-1">
-                4. Apparel Type *
+                3. Apparel Type *
               </label>
               <select id="quoteApparelType" class="w-full text-xs font-semibold p-2.5 bg-neutral-50 border border-neutral-200 rounded-xl focus:outline-none focus:border-black">
-                <option value="jersey">Dri-Fit Sublimation Jersey</option>
-                <option value="hoodie">Heavyweight Fleece Hoodie</option>
-                <option value="cotton-tee">Cotton Fest Team T-Shirt</option>
-                <option value="varsity">Letterman Varsity Jacket</option>
+                <option value="Heavyweight Hoodie (380 GSM)">Heavyweight Fleece Hoodie (380 GSM)</option>
+                <option value="Collegiate Varsity Jacket">Classic Collegiate Varsity Jacket</option>
+                <option value="Boxy Heavyweight Tee (240 GSM)">Boxy Heavyweight Tee (240 GSM)</option>
+                <option value="Dri-Fit Sublimation Jersey">Dri-Fit Sublimation Jersey</option>
               </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-neutral-700 uppercase tracking-wider mb-1">
+                Print / Work Type
+              </label>
+              <select id="quotePrintType" class="w-full text-xs font-semibold p-2.5 bg-neutral-50 border border-neutral-200 rounded-xl focus:outline-none focus:border-black">
+                <option value="High-Density Screen Print">High-Density Screen Print</option>
+                <option value="Embroidered Chenille Patch">Embroidered Chenille Patch</option>
+                <option value="Sublimation Print">Full Sublimation Print</option>
+                <option value="DTF Graphic Print">Direct-to-Film (DTF) Vibrant Print</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Quantity Slider -->
+          <div>
+            <div class="flex items-center justify-between mb-1">
+              <label class="text-xs font-bold text-neutral-700 uppercase tracking-wider">
+                4. Estimated Quantity *
+              </label>
+              <span id="quoteQtyDisplay" class="text-xs font-black text-black">30 Pieces</span>
+            </div>
+            <input 
+              type="range" 
+              id="quoteQtySlider" 
+              min="20" 
+              max="200" 
+              step="5" 
+              value="30"
+              oninput="document.getElementById('quoteQtyDisplay').textContent = this.value + ' Pieces'"
+              class="w-full accent-black cursor-pointer"
+            />
+            <div class="flex justify-between text-[10px] text-neutral-400 mt-1">
+              <span>20 pcs (Min Bulk)</span>
+              <span>50 pcs</span>
+              <span>100+ pcs (Max Factory Discount)</span>
+            </div>
+          </div>
+
+          <!-- Contact Name & Phone -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs font-bold text-neutral-700 uppercase tracking-wider mb-1">
+                Society Head / POC Name *
+              </label>
+              <input 
+                type="text" 
+                id="quotePocName" 
+                placeholder="Your Name" 
+                class="w-full text-xs font-medium p-2.5 bg-neutral-50 border border-neutral-200 rounded-xl focus:outline-none focus:border-black"
+                required
+              />
             </div>
             <div>
               <label class="block text-xs font-bold text-neutral-700 uppercase tracking-wider mb-1">
-                5. Quantity (Pcs) *
+                WhatsApp Phone Number *
               </label>
               <input 
-                type="number" 
-                id="quoteQuantity" 
-                value="25" 
-                min="15" 
-                max="1000" 
-                class="w-full text-xs font-semibold p-2.5 bg-neutral-50 border border-neutral-200 rounded-xl focus:outline-none focus:border-black" 
-                required 
+                type="tel" 
+                id="quotePocPhone" 
+                placeholder="10-digit number" 
+                class="w-full text-xs font-medium p-2.5 bg-neutral-50 border border-neutral-200 rounded-xl focus:outline-none focus:border-black"
+                required
               />
             </div>
           </div>
 
-          <!-- Bulk rate indicator -->
-          <div class="p-3 bg-neutral-100 rounded-xl flex items-center justify-between">
-            <div>
-              <div class="text-[11px] font-bold text-black uppercase">Estimated Rate:</div>
-              <div id="bulkDiscountPill" class="text-[10px] text-neutral-500 font-medium">10% Bulk Discount Included</div>
-            </div>
-            <div id="estimatedRatePerPiece" class="text-base font-black text-black">₹399/pc</div>
-          </div>
-
-          <!-- Customization notes -->
+          <!-- Notes -->
           <div>
             <label class="block text-xs font-bold text-neutral-700 uppercase tracking-wider mb-1">
-              6. Specific Customizations (Optional)
+              Additional Details / Sponsor Logos / Fest Date
             </label>
             <textarea 
               id="quoteNotes" 
               rows="2" 
-              placeholder="e.g. Society logo on chest, player names & numbers on back, sponsor logos on sleeve." 
-              class="w-full text-xs p-2.5 bg-neutral-50 border border-neutral-200 rounded-xl focus:outline-none focus:border-black"
+              placeholder="e.g. Sponsor logos on sleeves, dispatch needed before Annual Fest on Dec 15th..."
+              class="w-full text-xs font-medium p-2.5 bg-neutral-50 border border-neutral-200 rounded-xl focus:outline-none focus:border-black"
             ></textarea>
           </div>
 
-          <!-- Deadline -->
-          <div>
-            <label class="block text-xs font-bold text-neutral-700 uppercase tracking-wider mb-1">
-              7. Required Delivery Date
-            </label>
-            <input 
-              type="text" 
-              id="quoteDeadline" 
-              placeholder="e.g. Before Fest Week / 15th November" 
-              class="w-full text-xs font-semibold p-2.5 bg-neutral-50 border border-neutral-200 rounded-xl focus:outline-none focus:border-black" 
-            />
-          </div>
-
+          <!-- Submit Button -->
           <button 
             type="submit" 
-            class="w-full btn-minimal-black text-xs font-bold uppercase tracking-editorial py-3.5 px-4 rounded-full"
+            class="w-full py-3.5 px-4 rounded-full btn-society-highlight text-xs font-black uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg"
           >
-            Send Inquiry to WhatsApp 💬
+            <span>Send Bulk Society Request to WhatsApp 💬</span>
           </button>
         </form>
 
@@ -845,96 +926,93 @@
   </div>
 
   <!-- ========================================== -->
-  <!-- 💬 FLOATING WHATSAPP BUTTON                -->
+  <!-- ⚡ FLOATING BULK SOCIETY ORDER BUTTON (ALWAYS VISIBLE) -->
   <!-- ========================================== -->
-  <a 
-    href="javascript:void(0)" 
-    onclick="window.open(`https://wa.me/${STORE_CONFIG.whatsappNumber}?text=${encodeURIComponent('Hi University Merch Team! I have a question about merchandise and college delivery.')}`, '_blank')"
-    class="fixed bottom-6 right-6 z-40 bg-black text-white hover:bg-neutral-800 p-3.5 rounded-full shadow-2xl flex items-center gap-2 group transition-all"
-    title="Chat with Support on WhatsApp"
+  <button 
+    type="button" 
+    onclick="openSocietyQuoteModal()" 
+    class="fixed bottom-6 right-6 z-40 px-5 py-3 rounded-full btn-society-highlight shadow-2xl flex items-center gap-2 font-black text-xs uppercase tracking-wider hover:scale-105 transition-all border border-amber-300"
+    title="Society Bulk Orders (20+ pcs)"
   >
-    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
-    </svg>
-    <span class="text-xs font-bold hidden sm:inline">WhatsApp</span>
-  </a>
+    <span class="w-2 h-2 rounded-full bg-black animate-ping"></span>
+    <span>⚡ Bulk Society Order (20+)</span>
+  </button>
 
   <!-- ========================================== -->
-  <!-- 🔔 TOAST NOTIFICATION                      -->
+  <!-- 🖤 EDITORIAL FOOTER                        -->
   <!-- ========================================== -->
-  <div id="toastNotification" class="fixed bottom-6 left-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300">
-    <div class="bg-black text-white px-4 py-3 rounded-xl shadow-xl flex items-center gap-2 border border-neutral-800 text-xs font-bold">
-      <span id="toastMessage">Product added to bag</span>
-    </div>
-  </div>
-
-  <!-- ========================================== -->
-  <!-- 🦶 MINIMAL EDITORIAL FOOTER                -->
-  <!-- ========================================== -->
-  <footer class="bg-white text-neutral-500 text-xs pt-16 pb-12 border-t border-neutral-200">
+  <footer class="bg-black text-white py-16 border-t border-neutral-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-neutral-200">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-neutral-800">
         
-        <div class="space-y-4">
+        <!-- Brand Summary with Logo -->
+        <div class="md:col-span-2 space-y-4">
           <div class="flex items-center gap-3">
-            <div class="h-10 w-10 rounded-xl bg-white border border-neutral-200 p-1 flex items-center justify-center shrink-0">
+            <div class="h-12 w-12 rounded-xl bg-white border border-neutral-200 p-1 flex items-center justify-center shrink-0">
               <img src="logo.png" alt="University Merch Original Logo" class="h-full w-full object-contain" />
             </div>
             <div>
-              <div class="brand-font text-sm font-black text-black">UNIVERSITY MERCH</div>
-              <div class="text-[9px] text-neutral-400 uppercase tracking-widest font-semibold">ORIGINAL DU APPAREL</div>
+              <div class="font-princetown text-lg font-black tracking-wider text-white leading-none">
+                UNIVERSITY MERCH
+              </div>
+              <div class="text-[10px] text-neutral-400 tracking-editorial uppercase mt-0.5 font-sans font-semibold">
+                Original Delhi University Collective
+              </div>
             </div>
           </div>
-          <p class="text-neutral-500 text-xs leading-relaxed">
-            The dedicated merchandise store for Delhi University. Crafted for students, societies, and fest teams across North & South Campus.
+          <p class="text-xs text-neutral-400 max-w-sm leading-relaxed">
+            The authentic student-driven apparel brand for Delhi University. Specializing in 1-of-1 personalized varsity jackets, heavyweight hoodies, and bulk custom drops for campus societies.
           </p>
+          <div class="text-[11px] text-neutral-400 font-semibold">
+            📍 Express Delivery to North Campus, South Campus, and All India.
+          </div>
         </div>
 
+        <!-- Direct Navigation -->
         <div>
-          <h4 class="text-black font-bold mb-3 uppercase tracking-editorial text-[10px]">North Campus</h4>
-          <ul class="space-y-2 text-neutral-600">
-            <li><a href="javascript:void(0)" onclick="selectCollege('srcc')" class="hover:text-black transition-colors">SRCC</a></li>
-            <li><a href="javascript:void(0)" onclick="selectCollege('hindu')" class="hover:text-black transition-colors">Hindu College</a></li>
-            <li><a href="javascript:void(0)" onclick="selectCollege('hansraj')" class="hover:text-black transition-colors">Hansraj College</a></li>
-            <li><a href="javascript:void(0)" onclick="selectCollege('stephens')" class="hover:text-black transition-colors">St. Stephen's</a></li>
-            <li><a href="javascript:void(0)" onclick="selectCollege('miranda')" class="hover:text-black transition-colors">Miranda House</a></li>
+          <h4 class="text-xs font-bold uppercase tracking-editorial text-neutral-300 mb-4 font-princetown">
+            Navigation
+          </h4>
+          <ul class="space-y-2 text-xs text-neutral-400">
+            <li><a href="#collegesSection" class="hover:text-white transition-colors">All DU Colleges (40+)</a></li>
+            <li><a href="#mockupStudioSection" class="hover:text-white transition-colors">Custom Mockup Studio</a></li>
+            <li><a href="javascript:void(0)" onclick="openSocietyQuoteModal()" class="text-amber-400 font-bold hover:underline">Bulk Society Orders (20+)</a></li>
+            <li><a href="javascript:void(0)" onclick="openCartDrawer()" class="hover:text-white transition-colors">Shopping Bag</a></li>
           </ul>
         </div>
 
+        <!-- Campus Contact -->
         <div>
-          <h4 class="text-black font-bold mb-3 uppercase tracking-editorial text-[10px]">South Campus</h4>
-          <ul class="space-y-2 text-neutral-600">
-            <li><a href="javascript:void(0)" onclick="selectCollege('lsr')" class="hover:text-black transition-colors">Lady Shri Ram (LSR)</a></li>
-            <li><a href="javascript:void(0)" onclick="selectCollege('venky')" class="hover:text-black transition-colors">Sri Venkateswara (Venky)</a></li>
-            <li><a href="javascript:void(0)" onclick="selectCollege('gargi')" class="hover:text-black transition-colors">Gargi College</a></li>
-            <li><a href="javascript:void(0)" onclick="selectCollege('jmc')" class="hover:text-black transition-colors">Jesus & Mary (JMC)</a></li>
-            <li><a href="javascript:void(0)" onclick="selectCollege('arsd')" class="hover:text-black transition-colors">ARSD College</a></li>
+          <h4 class="text-xs font-bold uppercase tracking-editorial text-neutral-300 mb-4 font-princetown">
+            Campus Contact
+          </h4>
+          <ul class="space-y-2 text-xs text-neutral-400">
+            <li><strong class="text-white">WhatsApp:</strong> Direct Society Support</li>
+            <li><strong class="text-white">Instagram:</strong> @universitymerch.in</li>
+            <li><strong class="text-white">Location:</strong> Vishwavidyalaya / North Campus, Delhi</li>
           </ul>
-        </div>
-
-        <div>
-          <h4 class="text-black font-bold mb-3 uppercase tracking-editorial text-[10px]">Direct WhatsApp</h4>
-          <p class="text-xs text-neutral-500 mb-3">Questions about sizing, society mockups, or fest delivery?</p>
-          <button 
-            onclick="window.open(`https://wa.me/${STORE_CONFIG.whatsappNumber}?text=${encodeURIComponent('Hi University Merch Team! I want to inquire about DU apparel.')}`, '_blank')"
-            class="w-full btn-minimal-black text-xs font-bold uppercase tracking-editorial py-2.5 px-4 rounded-full"
-          >
-            Chat with Team 💬
-          </button>
         </div>
 
       </div>
 
-      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-neutral-400 gap-2">
-        <div>© 2026 University Merch (Original) • Unofficial Delhi University Student Community Store</div>
-        <div class="flex gap-4">
-          <a href="#" class="hover:text-black">Privacy</a>
-          <a href="#" class="hover:text-black">Terms</a>
-          <a href="#" class="hover:text-black">Fest Partners</a>
+      <!-- Copyright -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-neutral-500 gap-4">
+        <div>
+          © 2026 UNIVERSITY MERCH (ORIGINAL). Crafted for Delhi University.
+        </div>
+        <div class="flex gap-6 text-[11px] uppercase tracking-wider">
+          <a href="#" class="hover:text-neutral-300">Privacy Policy</a>
+          <a href="#" class="hover:text-neutral-300">Terms of Service</a>
+          <a href="#" class="hover:text-neutral-300">Society Bulk Terms</a>
         </div>
       </div>
     </div>
   </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toastNotification" class="fixed bottom-6 left-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-neutral-900 text-white text-xs font-bold px-4 py-3 rounded-xl shadow-2xl border border-neutral-700 flex items-center gap-2 pointer-events-none">
+    <span id="toastMessage">Action completed</span>
+  </div>
 
   <!-- Scripts -->
   <script src="data.js"></script>

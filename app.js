@@ -170,31 +170,43 @@ function renderCollegeDirectory() {
 }
 
 function selectCollege(collegeId) {
-  if (appState.selectedCollegeId === collegeId) {
-    appState.selectedCollegeId = "all";
-  } else {
-    appState.selectedCollegeId = collegeId;
-  }
-
+  appState.selectedCollegeId = collegeId;
   renderCollegeDirectory();
-  renderProducts();
 
-  // Scroll to catalog section
-  const catalog = document.getElementById("catalogSection");
-  if (catalog) {
-    catalog.scrollIntoView({ behavior: "smooth" });
-  }
-
-  // Pre-select in visualizer if available
-  if (typeof VISUALIZER_STATE !== "undefined" && collegeId !== "all") {
-    const col = DU_COLLEGES.find(c => c.id === collegeId);
+  // 🚀 Start 2D Custom Mockup Studio with selected College!
+  if (typeof VISUALIZER_STATE !== "undefined") {
+    const col = DU_COLLEGES.find(c => c.id === collegeId) || DU_COLLEGES[0];
     if (col) {
       VISUALIZER_STATE.collegeId = col.id;
       VISUALIZER_STATE.collegeName = col.name;
       VISUALIZER_STATE.collegeShort = col.shortName.toUpperCase();
+      
+      if (col.primaryColor && col.primaryColor !== "#09090b") {
+        VISUALIZER_STATE.baseColor = col.primaryColor;
+      }
+      if (col.accentColor) {
+        VISUALIZER_STATE.accentColor = col.accentColor;
+      }
+
       const colSelect = document.getElementById("visCollegeSelect");
       if (colSelect) colSelect.value = col.id;
-      if (typeof renderJerseyMockup === "function") renderJerseyMockup();
+
+      if (typeof initVisualizerControls === "function") {
+        initVisualizerControls();
+      }
+      if (typeof renderJerseyMockup === "function") {
+        renderJerseyMockup();
+      }
+
+      // Smoothly scroll down straight to the Custom Mockup Studio
+      const studio = document.getElementById("mockupStudioSection") || document.getElementById("jerseyStudioSection");
+      if (studio) {
+        studio.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+
+      if (typeof showToast === "function") {
+        showToast(`✨ Loaded ${col.name} in Mockup Studio!`);
+      }
     }
   }
 }
@@ -710,8 +722,10 @@ function setupEventListeners() {
   const searchInput = document.getElementById("globalSearchInput");
   if (searchInput) {
     searchInput.addEventListener("input", (e) => {
-      appState.searchQuery = e.target.value;
-      renderProducts();
+      appState.collegeSearchQuery = e.target.value.toLowerCase().trim();
+      const dirInput = document.getElementById("collegeDirectorySearch");
+      if (dirInput) dirInput.value = e.target.value;
+      renderCollegeDirectory();
     });
   }
 }
